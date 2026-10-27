@@ -6,10 +6,26 @@ import hashlib
 import math
 import secrets
 
+
 patient_records = {
-    "P101": {"name": "John Doe", "ward": "ICU", "is_admitted": True, "bill": 2400.0},
-    "P102": {"name": "Jane Smith", "ward": "General", "is_admitted": False, "bill": 450.0},
-    "P103": {"name": "Robert Brown", "ward": "Private", "is_admitted": True, "bill": 1200.0},
+    "P101": {
+        "name": "John Doe",
+        "ward": "ICU",
+        "is_admitted": True,
+        "bill": 2400.0,
+    },
+    "P102": {
+        "name": "Jane Smith",
+        "ward": "General",
+        "is_admitted": False,
+        "bill": 450.0,
+    },
+    "P103": {
+        "name": "Robert Brown",
+        "ward": "Private",
+        "is_admitted": True,
+        "bill": 1200.0,
+    },
 }
 
 
@@ -19,7 +35,13 @@ def admit_patient(p_id, name, ward, intake_log=None):
         intake_log = []
     if p_id in patient_records:
         return False
-    patient_records[p_id] = {"name": name, "ward": ward, "is_admitted": True, "bill": 0.0}
+    patient_records[p_id] = {
+        "name": name,
+        "ward": ward,
+        "is_admitted": True,
+        "bill": 0.0,
+    }
+
     intake_log.append(f"Admitted patient {p_id} into ward {ward}")
     return True
 

@@ -1,0 +1,16 @@
+# Reflection Answers
+
+1. Why are static analysis tools useful?
+Static analysis tools detect potential errors, security weaknesses, and code-quality problems without requiring the program to be executed for every check.
+
+2. What did Bandit help identify?
+Bandit helped identify potentially unsafe coding practices. I addressed the relevant findings, including unsafe expression evaluation, weak hashing, and predictable random token generation.
+
+3. What did Pylint help improve?
+Pylint helped improve code quality by identifying issues such as missing docstrings, unused imports, and variable shadowing.
+
+4. What did Flake8 help improve?
+Flake8 helped identify formatting and style violations, including line-length and file-formatting issues.
+
+5. What did I learn from this lab?
+I learned how to use static analysis tools, interpret their reports, correct the identified issues, and verify the changes by running the tools again. I also learned to use Git commits to track changes in separate stages.
